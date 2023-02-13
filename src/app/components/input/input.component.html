@@ -1,0 +1,12 @@
+<div class="input-wrapper">
+  <input
+    type="{{ showPassword ? 'text' : 'password' }}"
+    placeholder=" "
+    #passwordInput
+    (input)="enterPassword(passwordInput)"
+  />
+  <label>Password</label>
+  <button (click)="showPassword = !showPassword">
+    <span class="show">{{ showPassword ? "HIDE" : "SHOW" }}</span>
+  </button>
+</div>
